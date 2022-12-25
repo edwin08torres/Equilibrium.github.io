@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    background: hsl(217, 54%, 11%);
+}
+
+.main .container {
+    display: flex;
+    min-width: 300px;
+    max-width: 420px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container .card {
+    min-width: 280px;
+    max-width: 420px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: hsl(216, 50%, 16%);
+}
+
+.main .container .card .container-logo {
+    /* border: 2px solid red; */
+    display: flex;
+    min-width: 260px;
+    max-width: 400px;
+    height: 320px;
+    width: 100%;
+    justify-content: center;
+}
+
+.main .container .card .logo {
+    border-radius: 15px;
+    width: 100%;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/image-equilibrium.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main .container .card .logo img {
+    width: 100%;
+}
+
+.main .container .card .container-logo .logo i {
+    height: 287px;
+    max-width: 400px;
+    min-width: 260px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 153, 148,.50);
+    opacity: 0;
+    transition: .5s;
+    font-size: 30px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.main .container .card .container-logo .logo:hover i{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.main .container .card .descripción {
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.main .container .card .descripción .title {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main .container .card .descripción .title h2 {
+    color: #fff;
+}
+
+.main .container .card .descripción .title p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    letter-spacing: .1rem;
+}
+
+.main .container .card .descripción .price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    min-width: 250px;
+    /* border: 2px solid red; */
+}
+
+.main .container .card .descripción .price .price-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main .container .card .descripción .price .price-details img {
+    height: 20px;
+}
+
+.main .container .card .descripción .price .price-details p {
+    color: hsl(178, 100%, 50%);
+    padding-left: 8px;
+}
+
+.main .container .card .descripción .price .time {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main .container .card .descripción .price .time i {
+    color: hsl(215, 51%, 70%);
+    padding-right: 8px;
+}
+
+.main .container .card .descripción .price .time p {
+    color: hsl(215, 51%, 70%);
+}
+
+.main .container .card .descripción .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.main .container .card .descripción .author img {
+    height: 40px;
+    padding: 2px;
+}
+
+.main .container .card .descripción .author .border {
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .container .card .descripción .author p {
+    color: hsl(215, 51%, 70%);
+    padding-left: 25px;
+}
+
+.main .container .card .descripción .author span {
+    color: hsl(0, 0%, 100%);
+}
+
+hr {
+    margin-bottom: 25px;
+    height: 1px;
+    border-color: hsl(215, 51%, 70%);
+}
