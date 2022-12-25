@@ -105,6 +105,11 @@
     color: #fff;
 }
 
+.main .container .card .descripción .title h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
 .main .container .card .descripción .title p {
     color: hsl(215, 51%, 70%);
     font-size: 18px;
@@ -176,6 +181,11 @@
 
 .main .container .card .descripción .author span {
     color: hsl(0, 0%, 100%);
+}
+
+.main .container .card .descripción .author span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;  
 }
 
 hr {
